@@ -53,3 +53,14 @@ if [ $? -eq 0 ];  then  # <-- the above commands succeeded...
   fi
 fi
 ```
+
+### one-liner
+
+Paste the following one-liner to invoke the script from anywhere w/o needing to clone the repo:
+
+```bash
+time wget -O - \
+ https://raw.githubusercontent.com/vanstyn/instant-perlbrew/v1/instant-perlbrew.sh \
+ | bash -s perl-5.16.3 RapidApp
+```
+
